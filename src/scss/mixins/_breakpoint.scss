@@ -1,0 +1,44 @@
+/* stylelint-disable */
+$breakpoints-from: (
+  "sm": 0,
+  "md": 414px,
+  "lg": 656px,
+  "xl": 1020px,
+  "xxl": 1340px,
+) !default;
+$breakpoints-to: (
+  "sm-": 370px,
+  "sm": 413px,
+  "md-": 530px,
+  "md": 655px,
+  "md+": 699px,
+  "lg": 1019px,
+  "xl": 1339px,
+) !default;
+
+
+// Больше чем
+@mixin screen-gt($breakpoint) {
+  @media (min-width: map-get($breakpoints-from, $breakpoint)) {
+    @content;
+  }
+}
+
+// Больше чем, не включая переданный
+@mixin screen-gte($breakpoint) {
+  @media (min-width: map-get($breakpoints-to, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin screen-lt($breakpoint) {
+  @media (max-width: map-get($breakpoints-to, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin screen-lte($breakpoint) {
+  @media (max-width: map-get($breakpoints-from, $breakpoint)) {
+    @content;
+  }
+}

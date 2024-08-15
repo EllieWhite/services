@@ -1,0 +1,108 @@
+/* stylelint-disable */
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./../components/header/header";
+@import "./../components/info/info";
+@import "./../components/steps/steps";
+@import "./../components/form-actions/form-actions";
+@import "./../components/notification/notification";
+
+.main {
+  background-color: $color-3;
+  min-height: calc(100vh - 88px);
+  padding-bottom: 290px;
+}
+
+.title {
+  font-family: "SFPRODISPLAYBOLD";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  color: $color-4;
+
+  @include screen-lt("lg") {
+    font-size: 36px;
+  }
+
+  @include screen-lt("md") {
+    font-size: 28px;
+  }
+}
+
+.page__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--vh);
+}
+
+.text {
+  font-size: 18px; 
+  line-height: 1.33;
+  color: $color-2;
+
+  &_dark {
+    color: $color-4;
+  }
+
+  &_bold {
+    font-family: "GostUI_Bold";
+    font-weight: 700;
+  }
+}
+
+.text-small {
+  font-size: 14px;
+  line-height: 1.43;
+  color: $color-4;
+}
+
+.logo {
+  column-gap: 10px;
+
+  &__title {
+    position: relative;
+    top: 5px;
+    font-family: "GostUI_Bold";
+    font-weight: 700;
+    white-space: nowrap;
+
+    @include screen-lt("md") {
+      white-space: wrap;
+    }
+  }
+}
+
+.panel {
+  display: flex;
+  column-gap: 28px;
+
+  @include screen-lt("md") {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 10px;
+  } 
+}
+
+.user {
+  column-gap: 12px;
+
+  &__name {
+    white-space: nowrap;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $color-9;
+}
+
+.row-main {
+  margin-top: 16px;
+}

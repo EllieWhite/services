@@ -1,0 +1,337 @@
+<div class="steps container-small">
+  <div class="steps__item steps__item_active">
+    <div class="steps__number flex-all-center"><span>1</span></div>
+    <div class="steps__content">
+      <h2 class="steps__title">Выбор заявителя</h2>
+    </div>
+    <div class="steps__content steps__form">
+      <div class="form-actions">
+        <div class="form-actions__item">
+          <input
+            type="radio"
+            id="fiz"
+            class="form-actions__radio form-actions__custom-input"
+            name="declarant"
+            value=""
+            checked
+          />
+          <label
+            for="fiz"
+            class="form-actions__label form-actions__label-radio form-actions__label-custom"
+          >
+            <span class="form-actions__radio-btn"></span>
+            <div>
+              <p class="form-actions__object text text_bold">
+                Константинопольский К.К.
+              </p>
+              <p class="form-actions__status text">Физическое лицо</p>
+            </div>
+          </label>
+        </div>
+        <div class="form-actions__item">
+          <input
+            type="radio"
+            id="ur"
+            class="form-actions__radio form-actions__custom-input"
+            name="declarant"
+            value=""
+          />
+          <label
+            for="ur"
+            class="form-actions__label form-actions__label-radio form-actions__label-custom"
+          >
+            <span class="form-actions__radio-btn"></span>
+            <div>
+              <p class="form-actions__object text">ООО «Константинополь»</p>
+              <p class="form-actions__status text">Юридическое лицо</p>
+            </div>
+          </label>
+        </div>
+        <button class="steps__btn text" type="button">Продолжить</button>
+      </div>
+    </div>
+  </div>
+  <div class="steps__item">
+    <div class="steps__number flex-all-center"><span>2</span></div>
+    <div class="steps__content">
+      <h2 class="steps__title">Данные заявителя</h2>
+    </div>
+    <div class="steps__content steps__form">
+      <div class="form-actions">
+        <div class="form-actions__item">
+          <label class="form-actions__label-data text" for="surname"
+            >Фамилия</label
+          >
+          <input
+            class="form-actions__data text"
+            type="text"
+            id="surname"
+            name="surname"
+            value="Константинопольский"
+            required
+          />
+        </div>
+        <div class="form-actions__item">
+          <label class="form-actions__label-data text" for="name">Имя</label>
+          <input
+            class="form-actions__data text"
+            type="text"
+            id="name"
+            name="name"
+            value="Константин"
+            required
+          />
+        </div>
+        <div class="form-actions__item">
+          <label class="form-actions__label-data text" for="patronymic"
+            >Отчество</label
+          >
+          <input
+            class="form-actions__data text"
+            type="text"
+            id="patronymic"
+            name="patronymic"
+            value="Константинович"
+            required
+          />
+        </div>
+        <div class="form-actions__item">
+          <label class="form-actions__label-data text" for="email"
+            >Электронная почта</label
+          >
+          <input
+            class="form-actions__data text"
+            type="email"
+            id="email"
+            name="email"
+            value="konstantinopolskiy@mail.ru"
+            required
+          />
+        </div>
+        <div class="form-actions__item">
+          <label class="form-actions__label-data text" for="phone"
+            >Телефон</label
+          >
+          <input
+            class="form-actions__data text"
+            type="tel"
+            id="phone"
+            name="phone"
+            value="+7 (901) 123-45-67"
+            required
+          />
+        </div>
+        <div class="form-actions__document">
+          <p class="text form-actions__strong">
+            Документ, удостоверяющий личность
+          </p>
+          <div class="form-actions__item">
+            <label class="form-actions__label-data text" for="document"
+              >Документ</label
+            >
+            <input
+              class="form-actions__data text"
+              type="text"
+              id="document"
+              name="document"
+              value="Паспорт"
+              required
+            />
+          </div>
+          <div class="flex row-main form-actions__row  form-actions__row_1">
+            <div class="form-actions__item form-actions__item_series">
+              <label class="form-actions__label-data text" for="series"
+                >Серия</label
+              >
+              <input
+                class="form-actions__data text"
+                type="text"
+                id="series"
+                name="series"
+                value="5700"
+                maxlength="4"
+                required
+              />
+            </div>
+            <div class="form-actions__item form-actions__item_numbers">
+              <label class="form-actions__label-data text" for="numbers"
+                >Номер</label
+              >
+              <input
+                class="form-actions__data text"
+                type="text"
+                id="numbers"
+                name="numbers"
+                value="555888"
+                maxlength="6"
+                required
+              />
+            </div>
+          </div>
+          <div class="row-main form-actions__row form-actions__row_2">
+            <p class="text">Когда выдан</p>
+          </div>
+          <div class="flex form-actions__row form-actions__row_3">
+            <div class="form-actions__item form-actions__item_day">
+              <label class="form-actions__label-data text" for="day"
+                >День</label
+              >
+              <input
+                class="form-actions__data text"
+                type="text"
+                id="day"
+                name="day"
+                value="19"
+                maxlength="2"
+                required
+              />
+            </div>
+            <div class="form-actions__item form-actions__item_month">
+              <label class="form-actions__label-data text" for="month"
+                >Месяц</label
+              >
+              <input
+                class="form-actions__data text"
+                type="text"
+                id="month"
+                name="month"
+                value="10"
+                maxlength="2"
+                required
+              />
+            </div>
+            <div class="form-actions__item form-actions__item_year">
+              <label class="form-actions__label-data text" for="year"
+                >Год</label
+              >
+              <input
+                class="form-actions__data text"
+                type="text"
+                id="year"
+                name="year"
+                value="1990"
+                maxlength="4"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <button class="steps__btn text" type="button">Продолжить</button>
+      </div>
+    </div>
+  </div>
+  <div class="steps__item">
+    <div class="steps__number flex-all-center"><span>3</span></div>
+    <div class="steps__content">
+      <h2 class="steps__title">Согласие</h2>
+    </div>
+    <div class="steps__content steps__form">
+      <div class="form-actions">
+        <p class="text text_bold">
+          Требуется ваше согласие по&#160;следующим пунктам:
+        </p>
+        <ul class="steps__list">
+          <li class="steps__list-item text">
+            Я&#160;подтверждаю, что&#160;вся представленная информация является
+            достоверной и&#160;точной;
+          </li>
+          <li class="steps__list-item text">
+            Я&#160;несу ответственность в&#160;соответствии с&#160;действующим
+            законодательством Российской Федерации за&#160;предоставление
+            заведомо ложных или&#160;неполных сведений;
+          </li>
+          <li class="steps__list-item text">
+            Я&#160;выражаю свое согласие на&#160;необходимое использование
+            и&#160;обработку своих персональных данных, в&#160;том числе
+            в&#160;информационных системах;
+          </li>
+          <li class="steps__list-item text">
+            Со&#160;сроками оказания государственной услуги ознакомлен.
+          </li>
+        </ul>
+        <div class="form-actions__item">
+          <input
+            type="checkbox"
+            id="allPoints"
+            class="form-actions__checkbox form-actions__custom-input"
+            name="allPoints"
+            value=""
+            required
+          />
+          <label
+            for="allPoints"
+            class="form-actions__label form-actions__label-checkbox form-actions__label-custom"
+          >
+            <span class="form-actions__checkbox-btn"></span>
+            <p class="form-actions__status text">
+              Я&#160;подтверждаю свое&#160;согласие со&#160;всеми
+              вышеперечисленными пунктами
+            </p>
+          </label>
+        </div>
+        <div class="form-actions__item">
+          <input
+            type="checkbox"
+            id="electronic"
+            class="form-actions__checkbox form-actions__custom-input"
+            name="electronic"
+            value=""
+            required
+          />
+          <label
+            for="electronic"
+            class="form-actions__label form-actions__label-checkbox form-actions__label-custom"
+          >
+            <span class="form-actions__checkbox-btn"></span>
+            <p class="form-actions__status text">
+              Я&#160;уведомлен о&#160;том, что&#160;результат будет получен
+              в&#160;электронном виде
+            </p>
+          </label>
+        </div>
+        <div class="notification flex">
+          <svg class="notification__icon" width="24" height="24">
+            <use xlink:href="./img/svg/icon.svg#notification"></use>
+          </svg>
+          <p class="text">
+            Пожалуйста, еще&#160;раз внимательно проверьте&#160;все&#160;данные
+            перед отправкой
+          </p>
+        </div>
+        <input
+          class="steps__btn form-actions__submit text"
+          type="submit"
+          value="Отправить"
+        />
+        <div class="row-main">
+          <p class="text-small">
+            Нажимая кнопку &#171;Отправить&#187;, вы&#160;соглашаетесь с&#160;<a
+              target="_blank"
+              href="#"
+              class="link"
+              >правилами хранения и&#160;обработки персональных данных</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="steps__item steps__item_done">
+    <div class="steps__number flex-all-center"></div>
+    <div class="steps__content">
+      <h2 class="steps__title">Заявление принято</h2>
+    </div>
+    <div class="steps__container-big steps__form">
+        <p class="row-main text">
+            Номер заявления <span class="track-code text text_bold">RU-1234567.</span> Максимальный срок предоставления услуги&#160;— 20&#160;рабочих&#160;дней. Следите за&#160;статусом заявления в&#160;<a href="#" target="_blank" class="link">Личном кабинете</a>.
+        </p>
+        <p class="row-main text">
+            Если у&#160;вас остались вопросы по&#160;оказанию услуги, пожалуйста, обращайтесь по&#160;телефону <a href="tel:+73421234567">+7 344 123-45-67</a>.
+        </p>
+        <div class="flex steps__actions">
+             <a href="#" class="steps__btn text">Вернуться в каталог</a>
+             <a href="#" class="steps__btn steps__btn_light text">Перейти в личный кабинет</a>
+        </div>
+    </div>
+  </div>
+</div>

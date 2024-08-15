@@ -1,0 +1,17 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $color-1;
+    
+    &__wrapper {
+        flex-wrap: wrap;
+        gap: 10px 28px;
+
+
+        @include screen-lt("md") {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 10px;
+        } 
+    }
+}

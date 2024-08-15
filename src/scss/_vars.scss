@@ -1,0 +1,23 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "GostUI_Regular", sans-serif;
+}
+
+
+// colors
+$color-1: #3684E2;
+$color-2: #fff;
+$color-3: #f4f7fb;
+$color-4: #3b4256;
+$color-5: #0061d9;
+$color-6: #f5f5f7;
+$color-7: #848e99;
+$color-8: #FFF5E5;
+$color-9: #0050b2;
+$color-10: #bcc3ca;
+$color-11: #1BC400;
+
+$container-big: 1160px;
+$container-small: 736px;

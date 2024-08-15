@@ -1,0 +1,42 @@
+/* stylelint-disable */
+.info {
+    &__wrapper {
+        column-gap: 126px;
+        border-bottom: 1px solid rgba(59, 66, 86, 0.3);
+        padding-top: 64px;
+        padding-bottom: 40px;
+
+        @include screen-lt("lg") {
+            column-gap: 60px;
+        }
+
+        @include screen-lt("md") {
+            flex-direction: column-reverse;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            row-gap: 20px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 736px;
+    }
+
+    &__text {
+        margin-top: 24px;
+    }
+
+    &__subtitle {
+        font-family: "GostUI_Medium";
+        font-weight: 500;
+    }
+
+    &__name {
+        margin-top: 8px;
+    }
+
+    &__departament {
+        flex-shrink: 0;
+    }
+}

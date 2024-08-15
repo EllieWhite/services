@@ -1,0 +1,10 @@
+.notification {
+    column-gap: 8px;
+    margin-top: 24px;
+    padding: 16px 20px 24px 16px;
+    background-color: $color-8;
+
+    &__icon {
+        flex-shrink: 0;
+    }
+}
