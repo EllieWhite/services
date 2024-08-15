@@ -106,3 +106,17 @@
 .row-main {
   margin-top: 16px;
 }
+
+.error {
+    & .form-actions__label-checkbox {
+      border: 2px solid red;
+      border-radius: 4px;
+    
+  }
+
+  &:has( .form-actions__data) {
+    & .form-actions__data {
+      border: 2px solid red;
+    }
+  }
+}
