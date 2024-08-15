@@ -563,21 +563,6 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.form-actions__data::-webkit-input-placeholder {
-  color: #3b4256;
-}
-.form-actions__data::-moz-placeholder {
-  color: #3b4256;
-}
-.form-actions__data:-ms-input-placeholder {
-  color: #3b4256;
-}
-.form-actions__data::-ms-input-placeholder {
-  color: #3b4256;
-}
-.form-actions__data::placeholder {
-  color: #3b4256;
-}
 .form-actions__document {
   margin-top: 24px;
 }
@@ -758,4 +743,12 @@ a {
 
 .row-main {
   margin-top: 16px;
+}
+
+.error .form-actions__label-checkbox {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+.error:has(.form-actions__data) .form-actions__data {
+  border: 2px solid red;
 }/*# sourceMappingURL=main.css.map */
